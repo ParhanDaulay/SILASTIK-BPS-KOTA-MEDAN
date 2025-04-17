@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Permintaan Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="images/Logo BPS.png">
+</head>
+<body class="form-body">
+    <div class="form-container">
+        
+        <img src="images/Logo BPS.png" alt="">
+        <h2>Form Permintaan Data</h2>
+        
+        <form id="contactForm" action="#" method="post">
+            <label for="nama">Nama:</label>
+            <input placeholder="Nama" type="text" id="nama" name="nama" required>
+            <span id="namaError" class="error-message">Nama harus diisi!</span>
+            
+            <label for="email">Email:</label>
+            <input placeholder="Email" type="email" id="email" name="email" required>
+            <span id="emailError" class="error-message">Masukkan email yang valid!</span>
+            
+            <label for="jenis-kelamin">Jenis Kelamin:</label>
+            <select id="jenis-kelamin" name="jenis-kelamin" required>
+                <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+
+            <label for="pendidikan">Pendidikan Tertinggi yang Ditamatkan:</label>
+            <select id="pendidikan" name="pendidikan" required>
+                <option value="" disabled selected>Pilih Pendidikan</option>
+                <option value="SLTA/Sederajat">SLTA/Sederajat</option>
+                <option value="D1/D2/D3">D1/D2/D3</option>
+                <option value="D4/S1">D4/S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+            </select>
+
+            <label for="pekerjaan">Status Pekerjaan:</label>
+            <select id="pekerjaan" name="pekerjaan" required>
+                <option value="" disabled selected>Pilih Pekerjaan</option>
+                <option value="Pelajar/Mahasiswa">Pelajar/Mahasiswa</option>
+                <option value="Peneliti/Dosen">Peneliti/Dosen</option>
+                <option value="ASN/TNI/Polri">ASN/TNI/Polri</option>
+                <option value="Pegawai BUMN/BUMD">Pegawai BUMN/BUMD</option>
+                <option value="Pegawai Swasta">Pegawai Swasta</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+
+            <label for="instansi">Nama Instansi:</label>
+            <input placeholder="Instansi" type="text" id="instansi" name="instansi" required>
+            
+            <label for="permintaan">Permintaan Data:</label>
+            <textarea placeholder="Permintaan Data" id="permintaan" name="permintaan" rows="4" required></textarea>
+            
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
