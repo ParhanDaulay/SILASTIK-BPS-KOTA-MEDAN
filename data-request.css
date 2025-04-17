@@ -45,16 +45,46 @@ body {
     font-family: Helvetica, sans-serif;
     width: 90%;
     max-width: 500px;
-    background: #83bd7e;
+    background: rgba(255, 255, 255, 0.15); /* transparan */
+    backdrop-filter: blur(10px); /* efek blur */
+    -webkit-backdrop-filter: blur(10px); /* untuk Safari */
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: white;
+    transition: all 0.3s ease-in-out;
 }
+
+.container:hover {
+    box-shadow: 0 10px 40px rgba(31, 38, 135, 0.45);
+}
+
 
 label {
     font-weight: bold;
     display: block;
     margin-top: 10px;
+}
+
+input, select, textarea {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #0088cc);
 }
 
 input, select, textarea {
