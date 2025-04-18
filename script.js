@@ -10,6 +10,11 @@ window.addEventListener('scroll', () => {
     }
 });
 
+function fiturBelumTersedia() {
+    alert("Fitur belum tersedia.");
+}
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const wordElement = document.querySelector(".word");
@@ -30,6 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(changeWord, 1500); // Ganti kata setiap 2 detik
 });
+
+
 
 
 

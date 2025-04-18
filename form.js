@@ -37,14 +37,14 @@ function kirimKeWhatsApp() {
     }
 
     //Validasi Nomor Handphone
-    const handphoneRegex = /^[0-5]{6-15}$/;
+    const handphoneRegex = /^08[0-9]{8,13}$/;
     if (handphone === "") {
         alert ("No. Handphone tidak boleh kosong!");
         return;
     }
 
     if (!handphone.match(handphoneRegex)) {
-        alert ("Masukkan No. Hnadphone yang valid (hanya angka)!");
+        alert ("Masukkan No. Handphone yang valid (hanya angka)!");
         return;
     }
 
