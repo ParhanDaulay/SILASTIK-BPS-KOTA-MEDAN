@@ -93,7 +93,7 @@ function kirimKeWhatsApp() {
         ${teksPenutup}
      `;
 
-     const nomorWhatsApp = '+6281363392124';
+     const nomorWhatsApp = '#';
      const linkWhatsApp = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(pesan)}`;
 
      window.open(linkWhatsApp, '_blank');
